@@ -1,48 +1,32 @@
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	color: #666;
-	background: #f2f2f2; 
-	font-size: 1em;
-	line-height: 1.5em;
-}
+   /*-----------------------------------------------BODY--------------------------------------------*/
+   body {
+	    margin: 0;
+	    padding: 0; /*Se pone en ceros el margin y el padding para eliminar los espacios no deseados */
+	    font-family: Helvetica, Arial, sans-serif; /*Se declara el tipo de letra para todo el documento*/
+	    color: #666; /*Color de la letra*/
+	    background: #f2f2f2; /*color del fondo*/
+	    font-size: 1em; /*tamaño de letra*/
+	    line-height: 1.5em; /*controla la altura de la linea*/
+    }
+   /*-----------------------------------------------HEADER--------------------------------------------*/
+    #header { /*Se le aplicará el siguiente diseño al elemento que lleva header como id*/
+    	background: #333;
+    	color: white;
+    	height: 80px; /*Establece la altura del encabezado*/
+    }	
 
-h1 {
-	font-size: 2.3em;
-	line-height: 1.3em;
-	margin: 15px 0;
-	text-align: center;
-	font-weight: 300;
-}
-
-p {
-	margin: 0 0 1.5em 0;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-}
-
-#main-header {
-	background: #333;
-	color: white;
-	height: 80px;
-}	
-	#main-header a {
+	#header a { /*Indica que se le aplicará el color de letra blanco a los links que se encunetran en el encabezado*/
 		color: white;
 	}
 
-/*
- * Logo
- */
-#logo-header {
-	float: left;
-	padding: 15px 0 0 20px;
-	text-decoration: none;
-}
-	#logo-header:hover {
+/* Estilos que se aplicarán al contenido del header*/
+    #logo-header {  
+    	float: left;
+    	padding: 15px 0 0 20px;
+	    text-decoration: none;
+    } /*El contenido (nombre y descripcion) se alinearán de lado izquierdo, con cierto padding y sin ninguna decoración como subrayados, etc*/
+
+	#logo-header:hover { /*Se aplicará una animación al pasar el puntero por el texto del "logo"*/
 		color: #0b76a6;
 	}
 	
@@ -63,55 +47,45 @@ img {
 /*
  * Navegación
  */
-nav {
-	float: right;
-}
+    nav {
+    	float: right; /*El contenido de navegación de alineará a la derecha :)*/
+    }
+
 	nav ul {
 		margin: 0;
-		padding: 0;
-		list-style: none;
-		padding-right: 20px;
+		padding: 0; 
+		padding-right: 20px; /*solo se establece un padding del lado derecho*/ 
 	}
 	
-		nav ul li {
-			display: inline-block;
-			line-height: 80px;
-		}
+	nav ul li {
+        display: inline-block; /*Indica que los elementosd de la lista estarán en línea*/
+		line-height: 80px; /*y que tendrán cierta altura*/
+    	}
 			
-			nav ul li a {
-				display: block;
-				padding: 0 10px;
-				text-decoration: none;
-			}
+	nav ul li a {
+		display: block;
+		padding: 0 30px;/*Con este padding los elementos no estarán amontonados*/
+		text-decoration: none; /*Se eliminará el subrayado*/
+	}
 			
-				nav ul li a:hover {
-					background: #0b76a6;
-				}
-
-                #main-content {
-                    background: white;
-                    width: 90%;
-                    max-width: 800px;
-                    margin: 20px auto;
-                    box-shadow: 0 0 10px rgba(0,0,0,.1);
-                }
-                
-                    #main-content header,
-                    #main-content .content {
-                        padding: 40px;
-                    }
-
-                    #main-footer {
-                        background: #333;
-                        color: white;
-                        text-align: center;
-                        padding: 20px;
-                        margin-top: 40px;
-                    }
-                        #main-footer p {
-                            margin: 0;
-                        }
+    nav ul li a:hover {
+		background: #0b76a6; /*Al pasar el cursor por los elementos cambiará el color de fondo de estos*/
+	}
+         
+    
+   /*-----------------------------------------------FOOTER--------------------------------------------*/
+    #footer { /*Se establece un estilo general al pie de página*/
+        background: #333; /*Se le asigna un color de fondo, que haga matching con el del ecabezado*/
+        color: white;
+        text-align: center; /*Los elementos estarán centrados*/
+        padding: 20px;
+        margin-top: 40px; /*tendrá un pequeño padding y un margen de arriba de 40px*/
+        }
+    
+    #footer p {
+        margin: 0; /*el elemento p no tendrá margen*/
+        }
                         
-                        #main-footer a {
-                            color: white;
-                        }
+    #footer a {
+        color: white; /*el link será de color blanco, y tendrá un subrayado al no indicarse lo contrario*/
+        }
