@@ -89,3 +89,10 @@
     #footer a {
         color: white; /*el link será de color blanco, y tendrá un subrayado al no indicarse lo contrario*/
         }
+	
+	table{
+		border: 2px solid;
+		margin: 40px;
+		border-collapse: collapse
+		
+	}
